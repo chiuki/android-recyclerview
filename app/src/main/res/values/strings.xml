@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">Recycler View</string>
+
+  <string name="linear_layout">Linear layout</string>
+
+  <string name="grid_layout">Grid layout</string>
+
+  <string name="grid_layout_variable_span_size">Grid layout with variable span size</string>
+
+  <string name="grid_layout_header">Grid layout with header</string>
+  <string name="grid_layout_header_text">
+    Grid layout with header, spanning 2 columns
+  </string>
+
+  <string name="grid_layout_auto_fit">Grid layout, auto fit</string>
+
+  <string name="grid_layout_auto_fit_header">Grid layout, auto fit, with header</string>
+  <string name="grid_layout_auto_fit_header_text">
+    Grid layout with header, spanning all the columns
+  </string>
+</resources>

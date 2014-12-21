@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sqisland.android.recyclerview" >
+
+  <application
+      android:allowBackup="true"
+      android:icon="@drawable/ic_launcher"
+      android:label="@string/app_name"
+      android:theme="@style/AppTheme" >
+    <activity
+        android:name="com.sqisland.android.recyclerview.MainActivity"
+        android:label="@string/app_name" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".LinearLayoutActivity"
+        android:label="@string/linear_layout"
+        android:parentActivityName=".MainActivity" />
+    <activity
+        android:name=".GridLayoutActivity"
+        android:label="@string/grid_layout"
+        android:parentActivityName=".MainActivity" />
+    <activity
+        android:name=".GridLayoutVariableSpanSizeActivity"
+        android:label="@string/grid_layout_variable_span_size"
+        android:parentActivityName=".MainActivity" />
+    <activity
+        android:name=".GridLayoutHeaderActivity"
+        android:label="@string/grid_layout_header"
+        android:parentActivityName=".MainActivity" />
+    <activity
+        android:name=".GridLayoutAutoFitActivity"
+        android:label="@string/grid_layout_auto_fit"
+        android:parentActivityName=".MainActivity" />
+    <activity
+        android:name=".GridLayoutAutoFitHeaderActivity"
+        android:label="@string/grid_layout_auto_fit_header"
+        android:parentActivityName=".MainActivity" />
+  </application>
+
+</manifest>

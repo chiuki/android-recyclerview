@@ -18,4 +18,7 @@
   <string name="grid_layout_auto_fit_header_text">
     Grid layout with header, spanning all the columns
   </string>
+
+  <string name="grid_layout_add_remove">Grid layout, add and remove</string>
+  <string name="add_item">Add item</string>
 </resources>

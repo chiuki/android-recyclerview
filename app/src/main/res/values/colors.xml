@@ -3,4 +3,9 @@
   <color name="light_blue_300">#4FC3F7</color>
   <color name="light_blue_500">#03A9F4</color>
   <color name="light_blue_900">#01579B</color>
+
+  <color name="green_100">#C8E6C9</color>
+  <color name="green_300">#81C784</color>
+  <color name="green_500">#4CAF50</color>
+  <color name="green_900">#1B5E20</color>
 </resources>

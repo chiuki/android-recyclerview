@@ -23,7 +23,8 @@ public class MainActivity extends Activity {
           GridLayoutVariableSpanSizeActivity.class, R.string.grid_layout_variable_span_size),
       new Demo(this, GridLayoutHeaderActivity.class, R.string.grid_layout_header),
       new Demo(this, GridLayoutAutoFitActivity.class, R.string.grid_layout_auto_fit),
-      new Demo(this, GridLayoutAutoFitHeaderActivity.class, R.string.grid_layout_auto_fit_header)
+      new Demo(this, GridLayoutAutoFitHeaderActivity.class, R.string.grid_layout_auto_fit_header),
+      new Demo(this, GridLayoutAddRemoveActivity.class, R.string.grid_layout_add_remove)
     };
 
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);

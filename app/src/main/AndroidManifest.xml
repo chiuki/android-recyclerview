@@ -38,6 +38,10 @@
         android:name=".GridLayoutAutoFitHeaderActivity"
         android:label="@string/grid_layout_auto_fit_header"
         android:parentActivityName=".MainActivity" />
+    <activity
+        android:name=".GridLayoutAddRemoveActivity"
+        android:label="@string/grid_layout_add_remove"
+        android:parentActivityName=".MainActivity" />
   </application>
 
 </manifest>

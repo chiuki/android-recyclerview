@@ -32,6 +32,7 @@ public class AutofitRecyclerView extends RecyclerView {
       };
       TypedArray array = context.obtainStyledAttributes(attrs, attrsArray);
       columnWidth = array.getDimensionPixelSize(0, -1);
+      array.recycle();
     }
 
     manager = new GridLayoutManager(getContext(), 1);

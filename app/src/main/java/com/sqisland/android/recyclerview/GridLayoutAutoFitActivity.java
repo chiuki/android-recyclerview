@@ -10,6 +10,7 @@ public class GridLayoutAutoFitActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_auto_fit_recycler_view);
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    recyclerView.addItemDecoration(new MarginDecoration(this));
     recyclerView.setHasFixedSize(true);
     recyclerView.setAdapter(new NumberedAdapter(30));
   }

@@ -14,6 +14,7 @@ public class GridLayoutAutoFitHeaderActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_auto_fit_recycler_view);
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    recyclerView.addItemDecoration(new MarginDecoration(this));
     recyclerView.setHasFixedSize(true);
 
     View header = LayoutInflater.from(this).inflate(R.layout.auto_fit_header, recyclerView, false);

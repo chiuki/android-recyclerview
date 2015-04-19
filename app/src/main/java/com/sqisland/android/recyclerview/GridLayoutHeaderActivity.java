@@ -14,6 +14,7 @@ public class GridLayoutHeaderActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_recycler_view);
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    recyclerView.addItemDecoration(new MarginDecoration(this));
     recyclerView.setHasFixedSize(true);
 
     final GridLayoutManager manager = new GridLayoutManager(this, 2);

@@ -4,7 +4,6 @@
     android:id="@+id/text"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/item_margin"
     android:textAppearance="?android:attr/textAppearanceLarge"
     android:text="@string/grid_layout_auto_fit_header_text"
     android:textColor="@color/light_blue_900"

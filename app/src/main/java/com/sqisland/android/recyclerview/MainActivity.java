@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
     };
 
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    recyclerView.addItemDecoration(new MarginDecoration(this));
     recyclerView.setHasFixedSize(true);
     recyclerView.setAdapter(new DemoAdapter(demos));
     recyclerView.setLayoutManager(new LinearLayoutManager(this));

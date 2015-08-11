@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,7 @@ public class AddRemoveNumberedAdapter extends RecyclerView.Adapter<TextViewHolde
   @Override
   public TextViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
     View view = LayoutInflater.from(parent.getContext()).inflate(
-        viewType == ITEM_VIEW_TYPE_ADD ? R.layout.item_add : R.layout.item, parent, false);
+            viewType == ITEM_VIEW_TYPE_ADD ? R.layout.item_add : R.layout.item, parent, false);
     return new TextViewHolder(view);
   }
 
@@ -44,17 +43,23 @@ public class AddRemoveNumberedAdapter extends RecyclerView.Adapter<TextViewHolde
     final String label = labels.get(position);
     holder.textView.setText(label);
     holder.textView.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        removeItem(holder.getPosition());
-      }
+        @Override
+        public void onClick(View v) {
+            removeItem(holder.getPosition());
+        }
     });
   }
 
   private void addItem() {
-    int lastItem = Integer.parseInt(labels.get(labels.size() - 1));
-    labels.add(String.valueOf(lastItem + 1));
-    notifyItemInserted(labels.size() - 1);
+    if (labels.size() >=1){
+        int lastItem = Integer.parseInt(labels.get(labels.size() - 1));
+        labels.add(String.valueOf(lastItem + 1));
+        notifyItemInserted(labels.size() - 1);
+    } else {
+        labels.add(new String("0"));
+        notifyItemInserted(0);
+    }
+
   }
 
   private void removeItem(int position) {
